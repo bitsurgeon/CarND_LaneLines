@@ -1,7 +1,11 @@
 # CarND_LaneLines
-_Finding Lane Lines :: Udacity - Self-Driving Car Engineer Nanodegree_
+## _Finding Lane Lines :: Udacity - Self-Driving Car Engineer Nanodegree_
 
-## The goals / steps of this project are the following:
+Start working online now by clicking the binder badge below:  
+
+[![Binder](http://mybinder.org/badge.svg)](https://beta.mybinder.org/v2/gh/bitsurgeon/CarND_LaneLines/master)  
+
+### The goals / steps of this project are the following:
 * Make a pipeline that finds lane lines on the road
 * Reflect on your work in a written report
 
