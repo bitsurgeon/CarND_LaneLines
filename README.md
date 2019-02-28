@@ -1,8 +1,6 @@
 # CarND_LaneLines
 ## _Finding Lane Lines :: Udacity - Self-Driving Car Engineer Nanodegree_
 
-Start working online now by clicking the binder badge below:  
-
 [![Binder](http://mybinder.org/badge.svg)](https://beta.mybinder.org/v2/gh/bitsurgeon/CarND_LaneLines/master)
 [![Udacity - Self-Driving Car Engineer Nanodegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)  
 
