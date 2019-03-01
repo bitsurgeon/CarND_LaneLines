@@ -17,31 +17,31 @@ _Binder serves interactive notebooks online, so you can run the code and change 
 
 There are 6 steps in my lane finding pipeline. I will use the following camera image as an example to illustrate how the pipeline works.  
 _An example of a camera image is shown in below:_  
-![alt text][image0]
+<img src="./writeup_images_output/extrapolate/0_camera_image.jpg" alt="Camera" width="350">  
 
 1. Converted the camera images to grayscale.  
-![alt text][image1]
+<img src="./writeup_images_output/extrapolate/1_grayscale_image.jpg" alt="Grayscale" width="350">  
 
 2. Apply Gaussian blur to reduce noise.  
-![alt text][image2]
+<img src="./writeup_images_output/extrapolate/2_noise_reduced_image.jpg" alt="Gaussian" width="350">  
 
 3. Use Canny Edge Detector to extract edge information.  
-![alt text][image3]
+<img src="./writeup_images_output/extrapolate/3_edge_detected_image.jpg" alt="Canny" width="350">  
 
 4. Select region of interest for lane finding task.  
-![alt text][image4]
+<img src="./writeup_images_output/extrapolate/4_region_selected_image.jpg" alt="Region" width="350">  
 
 5. Perform Hough Transform to find lane lines on the road.  
     - line segments  
-![alt text][image5s]
+<img src="./writeup_images_output/segment/5_lane_line_image.jpg" alt="Hough_s" width="350">  
     - full extent of lane lines  
-![alt text][image5]
+<img src="./writeup_images_output/extrapolate/5_lane_line_image.jpg" alt="Hough" width="350">  
 
 6. Mark the camera image with the lane lines detected in previous steps.  
     - line segments  
-![alt text][image6s]
+<img src="./writeup_images_output/segment/6_lane_marked_image.jpg" alt="Marked_s" width="350">  
     - full extent of lane lines  
-![alt text][image6]
+<img src="./writeup_images_output/extrapolate/6_lane_marked_image.jpg" alt="Marked" width="350">  
 
 In Step 5 above, in order to draw a single line on the left and right lanes, I modified the **_draw_lines()_** function to perform the following operations:
 * **filter** - select sensible lines by checking its slope and the difference to the current averaged slope
@@ -59,16 +59,3 @@ In Step 5 above, in order to draw a single line on the left and right lanes, I m
 
 * explore other color space in pre-processing to extract lane information when there are shades on the road
 * update line extrapolation code to make it work better with curve lane lines
-
-[//]: # (Image References)
-
-[image0]: ./writeup_images_output/extrapolate/0_camera_image.jpg "Camera"
-[image1]: ./writeup_images_output/extrapolate/1_grayscale_image.jpg "Grayscale"
-[image2]: ./writeup_images_output/extrapolate/2_noise_reduced_image.jpg "Gaussian"
-[image3]: ./writeup_images_output/extrapolate/3_edge_detected_image.jpg "Canny"
-[image4]: ./writeup_images_output/extrapolate/4_region_selected_image.jpg "Region"
-[image5]: ./writeup_images_output/extrapolate/5_lane_line_image.jpg "Hough"
-[image6]: ./writeup_images_output/extrapolate/6_lane_marked_image.jpg "Marked"
-
-[image5s]: ./writeup_images_output/segment/5_lane_line_image.jpg "Hough_s"
-[image6s]: ./writeup_images_output/segment/6_lane_marked_image.jpg "Marked_s"
