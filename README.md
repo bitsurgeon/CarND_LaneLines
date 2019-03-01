@@ -8,7 +8,10 @@
 * Make a pipeline that finds lane lines on the road
 * Reflect on your work in a written report
 
-### Reflection
+#### _Binder_
+_Binder serves interactive notebooks online, so you can run the code and change the code within your browser without downloading the repository or installing Jupyter. Test drive online now by click the binder badge above._
+
+---
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
