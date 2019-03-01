@@ -6,6 +6,7 @@ dependencies:
     - numpy
     - matplotlib
     - ffmpeg
-    - imageio-ffmpeg
     - moviepy
     - opencv=3.4.2
+    - pip:
+        - imageio-ffmpeg
