@@ -1,12 +1,13 @@
 name: base
 channels:
+    - defaults
     - conda-forge
 dependencies:
     - python
     - numpy
     - matplotlib
     - ffmpeg
-    - opencv=3.4.2
+    - opencv
     - pip:
         - imageio-ffmpeg
-        - moviepy==1.*
+        - moviepy>=1.*
