@@ -1,0 +1,11 @@
+name: base
+channels:
+    - conda-forge
+dependencies:
+    - python=3.6
+    - numpy
+    - matplotlib
+    - ffmpeg
+    - imageio
+    - moviepy
+    - opencv
